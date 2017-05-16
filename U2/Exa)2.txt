@@ -1,0 +1,19 @@
+public class Collection<T>
+{
+  private T[] items;
+  private int size;
+  
+  public Collection ()
+  {
+    items = new T[10];
+    size = 10;
+  }
+  
+  public void add(T t)
+  {
+    items[size] = t;
+    size++;
+  }
+  
+  // other methods to work on the collection like isFull, isEmpty, remove, get...
+}

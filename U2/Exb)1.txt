@@ -1,0 +1,18 @@
+public class Movie
+{
+  private String title;
+  private int year;
+  private String director;
+  
+  public Movie (String title, int year, String director)
+  {
+    this.title = title;
+    this.year = year;
+    this.director = director;
+  }
+  
+  public void printMovieInfo()
+  {
+    System.out.println("The movie " + title + " was directed in " + year + " by " + director + ".");
+  }
+}

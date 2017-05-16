@@ -1,0 +1,22 @@
+#define SIZE 5
+
+struct Collection {
+    int items[SIZE];
+    int numberItems;
+};
+	
+Collection initCollection ( ) {
+	StackType stack;
+	CollectionType c;
+	for(i=0; i<SIZE; i++) {
+	       c->items[i] = 0;
+    }
+	return c;
+}
+
+void add(Collection c, int value)
+{
+    c->items[c->numberItems] = value;
+    c->numberItems += 1;
+}
+// more functions to operate with the collection…

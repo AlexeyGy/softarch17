@@ -1,0 +1,18 @@
+Counter.h:
+int getValue();
+void countUp();
+
+
+
+Counter.c:
+int countValue = 0;
+
+void countUp()
+{
+    countValue += 1;
+}
+
+int getValue()
+{
+    return countValue;
+}
