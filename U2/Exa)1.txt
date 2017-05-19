@@ -19,4 +19,4 @@ void add(Collection c, int value)
     c->items[c->numberItems] = value;
     c->numberItems += 1;
 }
-// more functions to operate with the collection…
+// more functions to operate with the collectionï¿½
