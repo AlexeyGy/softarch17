@@ -46,39 +46,8 @@
     
     
     \section*{Aufgabe 2.3}
-
-
-	\maketitle
-	
-	\section*{Aufgabe 2.1}
-	\subsection*{a) Abstract data type}
-	In some cases, more than one instances of very similar objects are required. An  entertainment database for example can hold a collection of movies, a collections of books and a collection of games. The similarities of these collections can be implemented in an abstract data type where all three collections are derived. Abstract means that the data type is not fixed to one kind of object but can take different forms like in this example movies, books and games. The motivation behind abstract data types is that we can reuse existing implementations in different situations. If we had implemented movies, books and games as abstract data objects in this example we would have had a lot of code duplication and the program would be difficult to maintain.
-	
-	\subsubsection*{Example 1: functional language}
-	\lstinputlisting{Exa)1.txt}
-	
-	\subsubsection*{Example 2: OO language}
-	\lstinputlisting{Exa)2.txt}
-	
-	
-	\subsection*{b)}
-	An Abstract data object is a data structure which holds and manages data. The implementation of the ado is hidden in the body, so other parts of the program can use it without depending of the implementation of the module. The function used to access and process the data are defined in the interface of the ado. Besides them ado often have security functions to check if an operation is legal, for example if a stack is not empty. 
-	
-	\subsubsection*{Example 1: OO language}
-	The following ado in Java holds data about a movie and can print an information about the movie. 
-	\lstinputlisting{Exb)1.txt}
-	
-	\subsubsection*{Example 2: functional language}
-	The following Ado is a simple counter in C which starts by 0 and counts up, when the function countUp() is called. The interface consists of void countUp() and int getValue().
-	\lstinputlisting{Exb)2.txt}
-	
-	
-	\section*{Aufgabe 2.2}
-	
-	\section*{Aufgabe 2.3}
-	
-	\section{Aufgabe 3}
-	\begin{enumerate}[a)]
+    
+    \begin{enumerate}[a)]
 		\item classes are one of the main concepts of Object Orientation (OO). There they are used to define methods and data which can then be derived to subclasses. In functional programming languages, it is used mainly for data type definitions of functions.
 		\item An \textbf{imperative language} uses sequences of statements and definitions to compute something. These statements change the current program status as each one is executed. A \textbf{functional language} on the other hand uses function definitions and composition of functions to do computations. These functions are stateless and completely-self contained, i.e. having no interference with other functions. Typically functional programming defines what needs to be done and does one composition to achieve its goal.\\For example if you need a program to compute the percentage of students from L2P that have registered for the exam:\\
 		\textbf{imperative}\\
