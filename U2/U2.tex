@@ -39,6 +39,12 @@ The following Ado is a simple counter in C which starts by 0 and counts up, when
 \section*{Aufgabe 2.2}
 \subsection*{a) Perl implementation}
 \lstinputlisting{ex13.pl}
+\lstinputlisting{ex13b.pl}
+\subsection*{b) Functional Abstraction}
+To implement this in a cleaner and simpler way we use the concept of \textbf{information hiding}. We put the functions allInOne, add and mult in a seperate Perl Module and import this Module in the Perl Script. This helps us seperating the implementation from the usage.
+\lstinputlisting{ex13b.pm}
+\lstinputlisting{ex13b.pl}
+
 
 
 \section*{Aufgabe 2.3}
