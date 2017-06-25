@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{enumerate}
+\usepackage{verbatim}
 \title{Software Architectures}
 \subtitle{Exercise 4}
 \author{ Felix Baumann \\ Manuel Gottschlich \\  Alexey Gy\"ori 352678 \\ Vincent Wehrwein \\ Markus Weller 352466}
@@ -15,7 +16,21 @@
     \section*{Aufgabe 4.1}
 Blub
     \section*{Aufgabe 4.2}
-Blub
+Variant programming uses superclass method outputs to do further processing in a sub class. E.g. We have a superclass Car and a subclass Porsche. Both superclass and subclass have a method to calculate the horse power output. This method inside Porsche is defined in a way s.t. it uses the code of the same method of the superclass and only includes the code differences.
+
+\begin{verbatim}
+module body Car 
+ function CalcHorsePower() 
+ 	return 20;
+ end CalcHorsePower;
+end Car;
+
+module Porsche extends Car 
+ function CalcHorsePower()
+  return super.CalcHorsePower() * 1.5;
+ end CalcHorsePower;
+end Porsche;
+\end{verbatim}
     \section*{Aufgabe 4.3}
     
     \textbf{Subsytem definition}
