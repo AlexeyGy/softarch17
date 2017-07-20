@@ -1,6 +1,7 @@
 \documentclass[a4paper,10pt]{scrartcl}[2003/01/01]
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
+
 \usepackage{inputenc}
 \usepackage{graphicx}
 \usepackage{listings}
@@ -15,9 +16,16 @@
     \section*{Aufgabe 6.1}
         \subsection*{a)}
         \subsection*{b)}
-    \section*{Aufgabe 6.2}
+    \section*{Aufgabe 6.2 - code generation in Software engineering}
         \subsection*{a)}
+        	\begin{itemize}
+        		\item speed up development and reduce development costs
+        		\item allow to easily reuse software design models for standard tasks and on different architectures
+        		\item source code is easier to understand as it can be written in a "metalanguage"
+        \end{itemize}
         \subsection*{b)}
+        	Your goal is to design an ATM software. You want to have some common functions for different versions of ATMs. Since you have security requirements, you have to write in C, but you also want a mobile application in java. You Program a translator for your platform independent model to C source code that automatically replaces descriptions of functionality into source code blocks. You program another translator for Java, but can reuse the model.
+        
         \newpage
     \section*{Aufgabe 6.3}
         \subsection*{a)}
